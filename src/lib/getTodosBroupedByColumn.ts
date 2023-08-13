@@ -8,6 +8,7 @@ export const getTodosGroupedByColumn = async () => {
 
   const todos = data.documents;
 
+  // @ts-ignore
   const columns = todos.reduce((acc, todo) => {
     if (!acc.get(todo.status)) {
       acc.set(todo.status, {
@@ -42,8 +43,11 @@ export const getTodosGroupedByColumn = async () => {
   }
 
   // sorting the columns by the order of the columnTypes
+
   const sortedColumns = new Map<TypedColumn, Column>(
+    // @ts-ignore
     Array.from(columns.entries()).sort(
+      // @ts-ignore
       (a, b) => columnTypes.indexOf(a[0]) - columnTypes.indexOf(b[0])
     )
   );

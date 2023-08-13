@@ -15,14 +15,14 @@
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "appwrite": "^11.0.0",
-    "autoprefixer": "10.4.14",
+    "autoprefixer": "^10.4.14",
     "core-js": "^3.32.0",
     "core-js-pure": "^3.32.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
     "next": "13.4.13",
     "openai": "^3.3.0",
-    "postcss": "8.4.27",
+    "postcss": "^8.4.27",
     "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-avatar": "^5.0.3",
@@ -33,6 +33,10 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react-beautiful-dnd": "^13.1.4",
     "encoding": "^0.1.13",
     "flowtype": "^2.0.0"
